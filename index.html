@@ -8,10 +8,65 @@
     <link rel="shotcut icon" type="img/png" href="Images/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/279598e603.js" crossorigin="anonymous"></script>
     <title>Nice Spend</title>
 </head>
 
 <body>
-    </body>
+
+    <nav class="nav noselect">
+        <div class="top_bar">
+            <div class="left">
+                <select>
+                    <option value="eng">English</option>
+                    <option value="French">French</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="russian">Russian</option>
+                </select>
+            </div>
+            <div class="right">
+                <select>
+                    <option value="USD">USD</option>
+                    <option value="RUPEE">RUPEE</option>
+                    <option value="EURO">EURO</option>
+                    <option value="YEN">YEN</option>
+                </select>
+            </div>
+        </div>
+                <div class="main_row">
+                    <div class="left">
+                        <div class="ham">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                          </div>
+                        <a href="#" class="logo">
+                            <img src="./Images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="links">
+                            <a href="#" class="main_link">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                            <a href="#" class="main_link">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="#" class="main_link">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="cart_count">2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchRow">
+                    <div class="searchWrapper">
+                        <input type="text" class="searchBar" placeholder="Search For Product...">
+                        <div class="btn"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="sortBtn"><i class="fas fa-filter"></i></div>
+                </div>
+    </nav>
+    
+</body>
 </html>

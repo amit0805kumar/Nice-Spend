@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   box-sizing: inherit;
   margin: 0px;
@@ -7,6 +8,130 @@ body {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+               supported by Chrome and Opera */
+  -webkit-tap-highlight-color: transparent; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+a {
+  color: #4e4e4e;
+  text-decoration: none; }
+
+nav.nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #0D31C2;
+  color: #fff; }
+  nav.nav .top_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #2851f5; }
+    nav.nav .top_bar select {
+      background: none;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      color: #fff; }
+      nav.nav .top_bar select:focus {
+        outline: none;
+        border: none; }
+  nav.nav .main_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0; }
+    nav.nav .main_row .left {
+      display: flex;
+      align-items: center; }
+      nav.nav .main_row .left .ham {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s;
+        cursor: pointer; }
+        nav.nav .main_row .left .ham span {
+          transition: all 0.3s;
+          width: 2.5rem;
+          height: 2px;
+          background: #fff;
+          margin: 0.2rem 0; }
+      nav.nav .main_row .left .logo {
+        display: block;
+        width: 11rem; }
+        nav.nav .main_row .left .logo img {
+          width: 100%; }
+    nav.nav .main_row .right .links {
+      display: flex;
+      margin-right: 1rem; }
+      nav.nav .main_row .right .links a {
+        color: #fff;
+        margin: 0 0.5rem;
+        display: flex;
+        align-items: center; }
+        nav.nav .main_row .right .links a i {
+          font-size: 2.2rem; }
+        nav.nav .main_row .right .links a #cart_count {
+          font-size: 1.3rem;
+          margin-left: 0.5rem;
+          color: #a9c4fd; }
+  nav.nav .searchRow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    padding-bottom: 1.5rem; }
+    nav.nav .searchRow .searchWrapper {
+      display: flex;
+      background: #fff;
+      border-radius: 300px;
+      overflow: hidden;
+      align-items: center;
+      width: 80%; }
+      nav.nav .searchRow .searchWrapper input {
+        padding: 0.4rem 0.5rem;
+        border: none;
+        flex: 1;
+        font-family: "Roboto", sans-serif;
+        padding-left: 0.8rem;
+        color: #272727; }
+        nav.nav .searchRow .searchWrapper input:focus {
+          border: none;
+          outline: none; }
+      nav.nav .searchRow .searchWrapper .btn {
+        color: #858585;
+        padding-right: 0.8rem;
+        height: 100%;
+        font-size: 1.3rem; }
+    nav.nav .searchRow .sortBtn {
+      margin-left: 1rem;
+      font-size: 1.3rem; }
 
 /*# sourceMappingURL=style.css.map */
