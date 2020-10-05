@@ -294,6 +294,10 @@ section.product_cards {
       background: #fff;
       margin: 0 1rem;
       color: #272727; }
+    section.product_cards .control_header .c_btn_new {
+      font-weight: 500;
+      padding: 0;
+      font-size: 1.5rem; }
     section.product_cards .control_header .active {
       background: #0D31C2;
       color: #fff; }
