@@ -7,5 +7,7 @@ $(document).ready(() => {
     cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 1000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
   });
 });
