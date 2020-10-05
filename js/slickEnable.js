@@ -10,4 +10,10 @@ $(document).ready(() => {
     pauseOnHover: false,
     pauseOnFocus: false,
   });
+
+  $(".product_slider_wrapper").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  });
 });
