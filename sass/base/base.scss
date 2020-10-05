@@ -6,6 +6,8 @@
 
 body {
   box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
 }
 html {
   font-size: 62.5%; //1rem = 10px def font size of browser = 16px; 10/16 = 62.5%
