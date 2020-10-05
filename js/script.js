@@ -6,6 +6,9 @@ $(document).ready(() => {
   ham.click(() => {
     sideBar.removeClass("sideBar_closed");
   });
+  $(".swipearea").click(() => {
+    sideBar.toggleClass("sideBar_closed");
+  });
 
   $(".swipearea,.sideBar").swipe({
     swipeStatus: function (
@@ -26,4 +29,15 @@ $(document).ready(() => {
       }
     },
   });
+
+  //   $(window).scroll(function (e) {
+  //     var $el = $(".nav");
+  //     var isPositionFixed = $el.css("position") == "fixed";
+  //     if ($(this).scrollTop() > 2 && !isPositionFixed) {
+  //       $el.css({ position: "fixed", top: "0px" });
+  //     }
+  //     if ($(this).scrollTop() < 2 && isPositionFixed) {
+  //       $el.css({ position: "relative", top: "0px" });
+  //     }
+  //   });
 });

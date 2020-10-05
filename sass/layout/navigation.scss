@@ -5,6 +5,7 @@ nav.nav{
     top: 0;
     background: $color_primary;
     color: #fff;
+    transition: all 3s;
     .top_bar{
         width: 100%;
         display: flex;
@@ -120,7 +121,7 @@ nav.nav{
 .sideBar{
     position: fixed;
     left: 0;
-    right: 0;
+    top: 0;
     box-shadow: $box_shadow_4;
     height: 100vh;
     width: 70%;
