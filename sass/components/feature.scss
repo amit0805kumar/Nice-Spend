@@ -1,0 +1,22 @@
+section.feature{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    @include rowCenter();
+    .box{
+        flex: 1;
+        position: relative;
+        img{
+            width: 100%;
+          
+        }
+        .text{
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: #fff;
+            font-size: 0.5rem;
+            width: 80%;
+        }
+    }
+}

@@ -347,4 +347,23 @@ section.product_cards {
               transform: translate(-50%, -50%);
               font-size: 1rem; }
 
+section.feature {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+  margin-left: 50%; }
+  section.feature .box {
+    flex: 1;
+    position: relative; }
+    section.feature .box img {
+      width: 100%; }
+    section.feature .box .text {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      color: #fff;
+      font-size: 0.5rem;
+      width: 80%; }
+
 /*# sourceMappingURL=style.css.map */
