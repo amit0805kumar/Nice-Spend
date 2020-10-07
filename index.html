@@ -86,7 +86,7 @@
         <div class="right">
           <div class="user">
             <div class="name">John</div>
-            <a href="#" class="profileLink">Profile</a>
+            <a href="./auth/login/" class="profileLink">Profile</a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
 
       <div class="sideBar_footer">
         <div class="footer_left">
-          <a href="#">Logout</a>
+          <a href="./auth/login/index.html">Logout</a>
         </div>
         <div class="footer_right">
           <a href="#"><i class="fas fa-cog"></i></a>
@@ -185,139 +185,272 @@
 
     <section class="product_cards">
       <div class="control_header">
-        <div class="c_btn active">Featured</div>
-        <div class="c_btn">New Arrivals</div>
+        <div class="c_btn active" data-id="1">Featured</div>
+        <div class="c_btn" data-id="2">New Arrivals</div>
       </div>
-
-      <div class="product_slider_wrapper slider">
-        <div class="card">
-          <div class="tag_container">
-            <div class="tag">New Arrival</div>
-            <div class="tag">20% Off</div>
-          </div>
-          <a href="#" class="image">
-            <img src="./Images/applwatch.jpg" alt="">
-          </a>
-          <div class="content">
-            <a href="#" class="left">
-              <div class="name">Product Name</div>
-              <div class="categ">Phone and Accesories</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="price">Rs. 28,000</div>
+      <div class="pd_sl" data-id="sl1">
+        <div class="product_slider_wrapper pd_sl_1 slider" data-id="sl1">
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+              <div class="tag">20% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/applwatch.jpg" alt="">
             </a>
-            <div class="right">
-              <a href="#" class="controllink"><i class="far fa-heart"></i></a>
-              <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="tag_container">
-            <div class="tag">40% Off</div>
-          </div>
-          <a href="#" class="image">
-            <img src="./Images/OnePlus-8-1.jpg" alt="">
-          </a>
-          <div class="content">
-            <a href="#" class="left">
-              <div class="name">Product Name</div>
-              <div class="categ">Phone and Accesories</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="price">Rs. 28,000</div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">40% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/OnePlus-8-1.jpg" alt="">
             </a>
-            <div class="right">
-              <a href="#" class="controllink"><i class="far fa-heart"></i></a>
-              <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="tag_container">
-            <div class="tag">New Arrival</div>
-          </div>
-          <a href="#" class="image">
-            <img src="./Images/headph.jpg" alt="">
-          </a>
-          <div class="content">
-            <a href="#" class="left">
-              <div class="name">Product Name</div>
-              <div class="categ">Phone and Accesories</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="price">Rs. 28,000</div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/headph.jpg" alt="">
             </a>
-            <div class="right">
-              <a href="#" class="controllink"><i class="far fa-heart"></i></a>
-              <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="tag_container">
-            <div class="tag">20% Off</div>
-          </div>
-          <a href="#" class="image">
-            <img src="./Images/tab.jpeg" alt="">
-          </a>
-          <div class="content">
-            <a href="#" class="left">
-              <div class="name">Product Name</div>
-              <div class="categ">Phone and Accesories</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="price">Rs. 28,000</div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">20% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/tab.jpeg" alt="">
             </a>
-            <div class="right">
-              <a href="#" class="controllink"><i class="far fa-heart"></i></a>
-              <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="tag_container">
-            <div class="tag">New Arrival</div>
-            <div class="tag">20% Off</div>
-          </div>
-          <a href="#" class="image">
-            <img src="./Images/miphone.webp" alt="">
-          </a>
-          <div class="content">
-            <a href="#" class="left">
-              <div class="name">Product Name</div>
-              <div class="categ">Phone and Accesories</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="price">Rs. 28,000</div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+              <div class="tag">20% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/miphone.webp" alt="">
             </a>
-            <div class="right">
-              <a href="#" class="controllink"><i class="far fa-heart"></i></a>
-              <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="pd_sl" data-id="sl2">
+        <div class="product_slider_wrapper pd_sl_2 slider" data-id="sl2">
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/headph.jpg" alt="">
+            </a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">40% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/Extreme2_Hero_Black-1605x1605px.png" alt="">
+            </a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/headph.jpg" alt="">
+            </a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">20% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/tab.jpeg" alt="">
+            </a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tag_container">
+              <div class="tag">New Arrival</div>
+              <div class="tag">20% Off</div>
+            </div>
+            <a href="#" class="image">
+              <img src="./Images/miphone.webp" alt="">
+            </a>
+            <div class="content">
+              <a href="#" class="left">
+                <div class="name">Product Name</div>
+                <div class="categ">Phone and Accesories</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs. 28,000</div>
+              </a>
+              <div class="right">
+                <a href="#" class="controllink"><i class="far fa-heart"></i></a>
+                <a href="#" class="controllink"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
 
     </section>
 

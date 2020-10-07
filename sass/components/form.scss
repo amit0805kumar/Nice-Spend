@@ -1,0 +1,107 @@
+.login_wrapper{
+    
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0.2px;
+    .header{
+        margin-top: 16rem;
+        color: #fff;
+        padding: 1rem;
+        .sub_heading{
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            letter-spacing: 2px;
+        }
+        .heading{
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -0.5rem;
+                height: 1.2px;
+                width: 70%;
+                background: #fff;
+            }
+        }
+    }
+    .form_wrapper{
+        background: #fff;
+        margin-top: 3rem;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        padding: 1rem;
+        transform: translateY(0.2rem);
+        form{
+            width: 80%;
+            margin-top: 3rem;
+            @include rowCenter();
+            .input_field{
+                position: relative;
+                display: flex;
+                margin: 3rem 0;
+                align-items: center;
+                border-bottom: 2px solid $color_primary;
+                .icon{
+                    font-size: 2rem;
+                    height: 100%;
+                    color: $color_grey_light;
+                    padding-left: 0.5rem;
+                }
+                input{
+                    width: 100%;
+                    border: none;
+                    font-size: 2rem;
+                    font-family: 'Poppins',sans-serif;
+                    padding: 1rem;
+                    &:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+            button#sub{
+                margin: 3rem 0;
+                @include rowCenter();
+                border-radius: 300px;
+                color: #fff;
+                background: $color_primary;
+                font-weight: 500;
+                font-family: 'Poppins',sans-serif;
+                letter-spacing: 2px;
+
+                text-align: center;
+                border: none;
+                padding: 1rem 3rem;
+                display: block;
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
+            }
+            .lostPwd{
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 1.4rem;
+                display: block;
+                @include rowCenter();
+                white-space: nowrap;
+            }
+
+            .registerBtn{
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 1.2rem;
+                a{
+                    color: $color_primary;
+                    font-weight: 700;
+                }
+            }
+        }
+    } 
+}

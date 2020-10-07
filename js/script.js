@@ -40,4 +40,41 @@ $(document).ready(() => {
   //       $el.css({ position: "relative", top: "0px" });
   //     }
   //   });
+
+  //Slider control
+
+  var sliderBtn = $(".c_btn");
+  var sliderPd = $(".pd_sl");
+  var hideSl = () => {
+    sliderPd.hide();
+    sliderPd.each(function () {
+      if ($(this).attr("data-id") === `sl1`) {
+        $(this).show();
+      }
+    });
+  };
+  setTimeout(hideSl, 2000);
+  sliderBtn.on("click", function () {
+    var id = $(this).attr("data-id");
+    sliderBtn.removeClass("active");
+    $(this).addClass("active");
+
+    sliderPd.hide();
+    sliderPd.each(function () {
+      if ($(this).attr("data-id") === `sl${id}`) {
+        $(this).show();
+      }
+    });
+  });
 });
+
+var sliderBtn = $(".c_btn");
+var sliderPd = $(".pd_sl");
+var hideSl = () => {
+  sliderPd.hide();
+  sliderPd.each(function () {
+    if ($(this).attr("data-id") === `sl1`) {
+      $(this).show();
+    }
+  });
+};

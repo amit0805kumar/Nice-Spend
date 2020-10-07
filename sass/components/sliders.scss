@@ -70,6 +70,7 @@ section.product_cards{
             background: #fff;
             margin: 0 1rem;
             color: $color_grey_dark;
+            transition: all .3s;
         }
         .c_btn_new{
             font-weight: 500;
@@ -264,3 +265,4 @@ section.recent_slider{
         }
     }
 }
+
