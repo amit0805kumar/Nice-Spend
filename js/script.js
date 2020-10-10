@@ -66,15 +66,32 @@ $(document).ready(() => {
       }
     });
   });
+
+  //Input field increment
+  var qtyInput = $("#qtyInput");
+  var qtyUp = $(".qty #up");
+  var qtyDown = $(".qty #down");
+  qtyDown.click(() => {
+    var val = qtyInput.val();
+    if(val>0){
+      qtyInput.val(val-1);
+    }
+
+  });
+  qtyUp.click(() => {
+    var val = qtyInput.val();
+    qtyInput.val(parseInt(val)+1);
+
+  });
 });
 
-var sliderBtn = $(".c_btn");
-var sliderPd = $(".pd_sl");
-var hideSl = () => {
-  sliderPd.hide();
-  sliderPd.each(function () {
-    if ($(this).attr("data-id") === `sl1`) {
-      $(this).show();
-    }
-  });
-};
+// var sliderBtn = $(".c_btn");
+// var sliderPd = $(".pd_sl");
+// var hideSl = () => {
+//   sliderPd.hide();
+//   sliderPd.each(function () {
+//     if ($(this).attr("data-id") === `sl1`) {
+//       $(this).show();
+//     }
+//   });
+// };
