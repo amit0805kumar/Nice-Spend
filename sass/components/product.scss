@@ -129,6 +129,7 @@
     font-size: 2rem;
     border-radius: 3px;
     @include rowCenter();
+    display: block;
 }
 .cartBtn{
     margin-top: 2.5rem;  

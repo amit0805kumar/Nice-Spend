@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <link rel="shotcut icon" type="img/png" href="../Images/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/279598e603.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../vendors/slick/slick.css" />
+    <link rel="stylesheet" href="../vendors/slick/slick-theme.css" />
+
+    <title>Nice Spend | Cart</title>
+  </head>
+
+  <body>
+    <nav class="nav noselect">
+      <div class="top_bar">
+        <div class="left">
+          <select>
+            <option value="eng">English</option>
+            <option value="French">French</option>
+            <option value="japanese">Japanese</option>
+            <option value="russian">Russian</option>
+          </select>
+        </div>
+        <div class="right">
+          <select>
+            <option value="USD">USD</option>
+            <option value="RUPEE">RUPEE</option>
+            <option value="EURO">EURO</option>
+            <option value="YEN">YEN</option>
+          </select>
+        </div>
+      </div>
+      <div class="main_row">
+        <div class="left">
+          <div class="ham">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+          <a href="../" class="logo">
+            <img src="../Images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="right">
+          <div class="links">
+            <a href="#" class="main_link">
+              <i class="fas fa-user-circle"></i>
+            </a>
+            <a href="#" class="main_link">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="#" class="main_link">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart_count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="searchRow">
+        <div class="searchWrapper">
+          <input
+            type="text"
+            class="searchBar"
+            placeholder="Search For Product..."
+          />
+          <div class="btn"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="sortBtn"><i class="fas fa-filter"></i></div>
+      </div>
+    </nav>
+
+    <div class="sideBar sideBar_closed">
+      <div class="swipearea"></div>
+      <div class="header">
+        <div class="left">
+          <a href="../"> <img src="../Images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="right">
+          <div class="user">
+            <div class="name">John</div>
+            <a href="../auth/login/" class="profileLink">Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="link_section">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">My Account</a>
+        <a href="#" class="link">My Cart</a>
+      </div>
+      <hr />
+      <div class="link_section">
+        <a href="#" class="link">Favourites</a>
+        <a href="#" class="link">Categories</a>
+        <a href="#" class="link">Super Deals</a>
+      </div>
+
+      <div class="sideBar_footer">
+        <div class="footer_left">
+          <a href="../auth/login/index.html">Logout</a>
+        </div>
+        <div class="footer_right">
+          <a href="#"><i class="fas fa-cog"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon_code_field">
+      <form>
+        <input type="text" placeholder="Apply Promo Code" />
+        <button type="submit">Apply</button>
+      </form>
+    </div>
+
+    <div class="cart_tems_wrapper">
+      <div class="heading">Cart Summary</div>
+      <div class="items_wrapper">
+        <div class="item">
+          <div class="left">
+            <div class="image">
+              <img src="../Images/headph.jpg" alt="cartItem" />
+            </div>
+            <div class="details">
+              <div class="name">Headphone</div>
+              <div class="price">
+                <i class="fas fa-rupee-sign"></i><span id="tot">2,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="qty">
+              <span>Qty</span>
+              <input type="number" disabled id="qtyInput" value="1" />
+              <div class="ctrl cartCtrl">
+                <div class="btn" id="up"><i class="fas fa-sort-up"></i></div>
+                <div class="btn" id="down">
+                  <i class="fas fa-sort-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <i class="fas fa-rupee-sign"></i><span>2,000</span>
+            </div>
+            <div class="del">
+              <i class="far fa-trash-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="image">
+              <img src="../Images/headph.jpg" alt="cartItem" />
+            </div>
+            <div class="details">
+              <div class="name">Headphone</div>
+              <div class="price">
+                <i class="fas fa-rupee-sign"></i><span>2,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="qty">
+              <span>Qty</span>
+              <input type="number" disabled id="qtyInput" value="1" />
+              <div class="ctrl">
+                <div class="btn" id="up"><i class="fas fa-sort-up"></i></div>
+                <div class="btn" id="down">
+                  <i class="fas fa-sort-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <i class="fas fa-rupee-sign"></i><span>2,000</span>
+            </div>
+            <div class="del">
+              <i class="far fa-trash-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="image">
+              <img src="../Images/headph.jpg" alt="cartItem" />
+            </div>
+            <div class="details">
+              <div class="name">Headphone</div>
+              <div class="price">
+                <i class="fas fa-rupee-sign"></i><span>2,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="qty">
+              <span>Qty</span>
+              <input type="number" disabled id="qtyInput" value="1" />
+              <div class="ctrl">
+                <div class="btn" id="up"><i class="fas fa-sort-up"></i></div>
+                <div class="btn" id="down">
+                  <i class="fas fa-sort-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <i class="fas fa-rupee-sign"></i><span>2,000</span>
+            </div>
+            <div class="del">
+              <i class="far fa-trash-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="static_wrapper">
+      <div class="summary">
+        <div class="name">Total</div>
+        <div class="val">
+          <i class="fas fa-rupee-sign"></i><span>53,000</span>
+        </div>
+      </div>
+      <a href="#" class="bigBtn"> CHECKOUT </a>
+      <a href="../" class="bigBtn"> CONTINUE SHOPPING </a>
+    </div>
+
+    <section class="recent_slider cartBottomSlider">
+      <div class="heading">View More Products</div>
+
+      <div class="recentSlider slider">
+        <a href="#" class="card">
+          <div class="image">
+            <img src="../Images/headph.jpg" alt="prod" />
+          </div>
+          <div class="content">
+            <div class="name">Product Name</div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <div class="image">
+            <img src="../Images/Smart-Mixer-Large.png" alt="prod" />
+          </div>
+          <div class="content">
+            <div class="name">Product Name</div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <div class="image">
+            <img src="../Images/p754503.jpg" alt="prod" />
+          </div>
+          <div class="content">
+            <div class="name">Product Name</div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <div class="image">
+            <img src="../Images/phone.png" alt="prod" />
+          </div>
+          <div class="content">
+            <div class="name">Product Name</div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <div class="image">
+            <img src="../Images/applwatch.jpg" alt="prod" />
+          </div>
+          <div class="content">
+            <div class="name">Product Name</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <script src="../vendors/jquery.touchSwipe.min.js"></script>
+    <script src="../vendors/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/slickEnable.js"></script>
+
+    <script>
+      $(document).ready(() => {
+        $(".main_pd_slider").slick({
+          dots: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+        });
+      });
+    </script>
+  </body>
+</html>

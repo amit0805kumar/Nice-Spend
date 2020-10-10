@@ -1,0 +1,185 @@
+.coupon_code_field {
+  margin-top: 18rem;
+  form {
+    display: flex;
+    padding: 1rem;
+    input {
+      padding: 1rem 0.6rem;
+      background: #fff;
+      font-family: "Poppins", sans-serif;
+      color: $color_grey_dark;
+      border: 1px solid $color_primary;
+      width: 60%;
+      &:focus {
+        border: 1px solid $color_primary;
+        outline: none;
+      }
+    }
+    button {
+      flex: 1;
+      color: #fff;
+      padding: 1rem 1.2rem;
+      background-color: $color_primary;
+      border: none;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.static_wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 500;
+  background-image:url("../Images/shopping.png"), linear-gradient(to right, #f92339, #a111ff);
+  background-size: contain;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0px -0.3rem 3rem rgba(0, 0, 0, 0.2),
+    0px -0.6rem 3rem rgba(0, 0, 0, 0.1);
+  .summary {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .bigBtn {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    border: 1.5px solid #fff;
+    margin: 1.2rem 0;
+    font-size: 1.3rem;
+  }
+}
+
+.cartBottomSlider {
+  margin-bottom: 18rem !important;
+}
+
+.cart_tems_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 1.5rem;
+
+  margin-bottom: 2rem;
+  .heading {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: $color_grey_dark;
+    margin-bottom: 1.5rem;
+  }
+  .items_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .item {
+      width: 100%;
+      background: rgb(247, 247, 247);
+      border-radius: 4px;
+      display: flex;
+      height: 7rem;
+      margin: 1rem 0;
+      justify-content: space-between;
+      box-shadow: $box_shadow_1;
+      .left {
+        display: flex;
+        align-items: center;
+        .image {
+          padding: 0.3rem;
+          width: 7rem;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 4px;
+          img {
+            height: 100%;
+          }
+        }
+        .details {
+          padding-left: 0.5rem;
+          color: $color_grey_dark;
+          width: 11rem;
+          overflow: hidden;
+          .name {
+            font-size: 1.5rem;
+            overflow: hidden;
+            width: 100%;
+          }
+          .price {
+            color: $color_grey;
+            font-size: 1.3rem;
+            i {
+              margin-right: 0.2rem;
+              font-size: 1.2rem;
+              color: $color_grey_light;
+            }
+          }
+        }
+      }
+      .right {  
+        display: flex;
+        align-items: center;
+        width: 17rem;
+        .qty {
+          width: 7rem;
+          // border: $color_grey_dark 2px solid;
+          display: flex;
+          align-items: center;
+          align-self: stretch;
+          padding: 0.5rem;
+          margin-right: 0.5rem;
+          border-right: 1px solid rgb(216, 216, 216);
+          span {
+            font-size: 1.1rem;
+            margin-right: 0.5rem;
+            font-weight: 500;
+            color: $color_grey_light;
+          }
+          input {
+            font-size: 1.1rem;
+            width: 100%;
+            padding: 0.3rem 0.6rem;
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .total {
+          padding: 0 0.8rem;
+          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 1.3rem;
+            margin-right: 0.2rem;
+          }
+        }
+        .del {
+          align-self: stretch;
+          font-size: 2rem;
+          padding: 0 0.6rem;
+          color: $color_grey_dark;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

@@ -73,16 +73,19 @@ $(document).ready(() => {
   var qtyDown = $(".qty #down");
   qtyDown.click(() => {
     var val = qtyInput.val();
-    if(val>0){
-      qtyInput.val(val-1);
+    if (val > 0) {
+      qtyInput.val(val - 1);
     }
-
   });
   qtyUp.click(() => {
     var val = qtyInput.val();
-    qtyInput.val(parseInt(val)+1);
-
+    qtyInput.val(parseInt(val) + 1);
   });
+
+  // var cartItem = $(".items_wrapper .item");
+  // cartItem.each(function(item){
+  //   var price = item
+  // })
 });
 
 // var sliderBtn = $(".c_btn");
