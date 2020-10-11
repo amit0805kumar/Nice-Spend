@@ -82,19 +82,57 @@ $(document).ready(() => {
     qtyInput.val(parseInt(val) + 1);
   });
 
-  // var cartItem = $(".items_wrapper .item");
-  // cartItem.each(function(item){
-  //   var price = item
-  // })
-});
+  //Cart Counter controller
 
-// var sliderBtn = $(".c_btn");
-// var sliderPd = $(".pd_sl");
-// var hideSl = () => {
-//   sliderPd.hide();
-//   sliderPd.each(function () {
-//     if ($(this).attr("data-id") === `sl1`) {
-//       $(this).show();
-//     }
-//   });
-// };
+  var cartItem = $(".items_wrapper .item");
+  var finalTotal = 0;
+  var finalTotalHolder = $(".static_wrapper span");
+
+  var upadteTotal = () => {
+    cartItem.each(function (item, obj) {
+      var price = parseInt($(obj).find(".each_price").text().replace(",", ""));
+      var count = parseInt($(obj).find("input").val());
+      var total = $(obj).find(".total_price");
+      total.text(price * count);
+      finalTotal += parseInt(total.text());
+      finalTotalHolder.text(finalTotal);
+    });
+  };
+
+  cartItem.each(function (item, obj) {
+    var price = parseInt($(obj).find(".each_price").text().replace(",", ""));
+    var count = parseInt($(obj).find("input").val());
+    var total = $(obj).find(".total_price");
+    total.text(price * count);
+
+    var qtyIn = $(obj).find("#qtyInputM");
+    var up = $(obj).find("#upM");
+    var down = $(obj).find("#downM");
+    down.click(() => {
+      var val = qtyIn.val();
+      if (val > 0) {
+        qtyIn.val(val - 1);
+      }
+
+      price = parseInt($(obj).find(".each_price").text().replace(",", ""));
+      count = parseInt($(obj).find("input").val());
+      total = $(obj).find(".total_price");
+      total.text(price * count);
+      finalTotal = 0;
+      upadteTotal();
+    });
+    up.click(() => {
+      var val = qtyIn.val();
+      qtyIn.val(parseInt(val) + 1);
+
+      price = parseInt($(obj).find(".each_price").text().replace(",", ""));
+      count = parseInt($(obj).find("input").val());
+      total = $(obj).find(".total_price");
+      total.text(price * count);
+      finalTotal = 0;
+      upadteTotal();
+    });
+  });
+
+  upadteTotal();
+});

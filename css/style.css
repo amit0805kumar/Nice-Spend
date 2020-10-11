@@ -663,6 +663,8 @@ section.feature {
       border: none; }
       .main_product_details .qty input:focus {
         outline: none; }
+    .main_product_details .qty .btn {
+      font-size: 1.6rem; }
   .main_product_details .bigBtn {
     width: 100%;
     text-align: center;
@@ -833,6 +835,8 @@ section.feature {
             background: transparent; }
             .cart_tems_wrapper .items_wrapper .item .right .qty input:focus {
               outline: none; }
+          .cart_tems_wrapper .items_wrapper .item .right .qty .btn {
+            font-size: 1.6rem; }
         .cart_tems_wrapper .items_wrapper .item .right .total {
           padding: 0 0.8rem;
           font-size: 1.5rem;
