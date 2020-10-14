@@ -45,7 +45,7 @@ nav.nav {
   width: 100%;
   left: 0;
   top: 0;
-  background: #4a148c;
+  background: #311B92;
   background-image: url("../Images/navBgPattern.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0.5rem;
-    border-bottom: 1px solid #7b1fa2; }
+    border-bottom: 1px solid #512DA8; }
     nav.nav .top_bar select {
       background: none;
       font-size: 1rem;
@@ -150,7 +150,7 @@ nav.nav {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   height: 100vh;
   width: 70%;
-  background: #4a148c;
+  background: #311B92;
   background-image: url("../Images/sidebarPattern.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ nav.nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.8rem;
-    border-bottom: 1px solid #7b1fa2; }
+    border-bottom: 1px solid #512DA8; }
     .sideBar .header .left a {
       display: block;
       width: 9rem; }
@@ -309,7 +309,7 @@ section.product_cards {
       font-size: 1.5rem;
       margin: 0; }
     section.product_cards .control_header .active {
-      background: #4a148c;
+      background: #311B92;
       color: #fff; }
   section.product_cards .slider {
     width: 100%; }
@@ -377,7 +377,7 @@ section.product_cards {
             width: 2.5rem;
             height: 2.5rem;
             border-radius: 300px;
-            background: #4a148c;
+            background: #311B92;
             color: #fff;
             position: relative;
             margin-top: 0.4rem; }
@@ -525,7 +525,7 @@ section.feature {
         display: flex;
         margin: 3rem 0;
         align-items: center;
-        border-bottom: 2px solid #4a148c; }
+        border-bottom: 2px solid #311B92; }
         .login_wrapper .form_wrapper form .input_field .icon {
           font-size: 2rem;
           height: 100%;
@@ -546,7 +546,7 @@ section.feature {
         margin-left: 50%;
         border-radius: 300px;
         color: #fff;
-        background: #4a148c;
+        background: #311B92;
         font-weight: 500;
         font-family: 'Poppins',sans-serif;
         letter-spacing: 2px;
@@ -570,7 +570,7 @@ section.feature {
         text-align: center;
         font-size: 1.2rem; }
         .login_wrapper .form_wrapper form .registerBtn a {
-          color: #4a148c;
+          color: #311B92;
           font-weight: 700; }
 
 .product_details {
@@ -583,7 +583,7 @@ section.feature {
   .product_details .name {
     color: #4e4e4e; }
   .product_details .stars {
-    color: #4a148c;
+    color: #311B92;
     display: flex; }
 
 .main_product_slider {
@@ -687,7 +687,7 @@ section.feature {
     background-image: linear-gradient(to right, #f92339, #a111ff); }
   .main_product_details .buyBtn {
     color: #fff;
-    background: #4a148c;
+    background: #311B92;
     margin-top: 1rem; }
 
 .product_details_main {
@@ -716,16 +716,16 @@ section.feature {
       background: #fff;
       font-family: "Poppins", sans-serif;
       color: #272727;
-      border: 1px solid #4a148c;
+      border: 1px solid #311B92;
       width: 60%; }
       .coupon_code_field form input:focus {
-        border: 1px solid #4a148c;
+        border: 1px solid #311B92;
         outline: none; }
     .coupon_code_field form button {
       flex: 1;
       color: #fff;
       padding: 1rem 1.2rem;
-      background-color: #4a148c;
+      background-color: #311B92;
       border: none; }
       .coupon_code_field form button:focus {
         border: none;
