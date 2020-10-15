@@ -135,4 +135,31 @@ $(document).ready(() => {
   });
 
   upadteTotal();
+
+  //Nav scroll change
+  var mainSearch = $(".searchRow");
+  var logo = $(".nav .logo");
+  var lastScrollTop = 0,
+    delta = 5;
+  var navScrollTop = () => {
+    $(window).scroll(function () {
+      var nowScrollTop = $(this).scrollTop();
+
+      if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
+        if (nowScrollTop > lastScrollTop) {
+          mainSearch.slideUp("fast");
+          logo.hide(100);
+          // navLogo.addClass("logo_shut");
+          // nav.css("background", "rgba(26, 34, 126, 0.9)");
+        } else {
+          mainSearch.slideDown("fast");
+          logo.show(100);
+          // navLogo.removeClass("logo_shut");
+          // nav.css("background", "rgba(26, 34, 126, 0.8)");
+        }
+        lastScrollTop = nowScrollTop;
+      }
+    });
+  };
+  navScrollTop();
 });
