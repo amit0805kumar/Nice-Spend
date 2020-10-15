@@ -72,6 +72,10 @@ nav.nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  nav.nav .main_row {
+    padding: 0.8rem 0; } }
+
     nav.nav .main_row .left {
       display: flex;
       align-items: center; }
@@ -93,6 +97,10 @@ nav.nav {
       nav.nav .main_row .left .logo {
         display: block;
         width: 11rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  nav.nav .main_row .left .logo {
+    width: 9rem; } }
+
         nav.nav .main_row .left .logo img {
           width: 100%; }
     nav.nav .main_row .right .links {
@@ -105,6 +113,10 @@ nav.nav {
         align-items: center; }
         nav.nav .main_row .right .links a img {
           width: 2.2rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  nav.nav .main_row .right .links a img {
+    width: 1.8rem; } }
+
         nav.nav .main_row .right .links a #cart_count {
           font-size: 1.3rem;
           margin-left: 0.5rem;
@@ -116,6 +128,11 @@ nav.nav {
     padding: 0.5rem 0.8rem;
     padding-bottom: 1.5rem;
     justify-content: center; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  nav.nav .searchRow {
+    padding: 0.5rem 0.4;
+    padding-bottom: 1rem; } }
+
     nav.nav .searchRow .searchWrapper {
       display: flex;
       background: #fff;
@@ -156,7 +173,7 @@ nav.nav {
   background-repeat: no-repeat;
   overflow-y: scroll;
   overflow-y: unset;
-  transition: all .3s; }
+  transition: all 0.3s; }
   .sideBar .swipearea {
     width: 200rem;
     height: 100%;
