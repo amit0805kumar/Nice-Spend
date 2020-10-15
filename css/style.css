@@ -231,7 +231,7 @@ nav.nav {
 .sideBar_closed {
   transform: translateX(-102%); }
   .sideBar_closed .swipearea {
-    width: 1rem; }
+    width: 2rem; }
 
 .top_categ {
   margin-top: 18rem;
