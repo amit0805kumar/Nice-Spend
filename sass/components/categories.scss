@@ -1,0 +1,35 @@
+.categories_wrapper{
+    margin-top: 18rem;
+    .heading{
+        margin-left: 1rem;
+        font-size: 2rem;
+        color: $color_grey_dark;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+    .cards_wrapper
+    {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 8rem;
+            margin: 1rem 2rem;
+            .icon{
+                width: 100%;
+                img{
+                    width: 85%;
+                    @include rowCenter();
+                }
+            }
+            .name{
+                text-align: center;
+                font-size: 1.3rem;
+                color: $color_grey;
+                margin-top: 0.8rem;
+            }
+        }
+    }
+}

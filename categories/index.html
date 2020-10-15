@@ -4,19 +4,19 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta charset="utf-8" />
 
-    <link rel="shotcut icon" type="img/png" href="../../Images/logo.png" />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="shotcut icon" type="img/png" href="../Images/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script
       src="https://kit.fontawesome.com/279598e603.js"
       crossorigin="anonymous"
     ></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="../../vendors/slick/slick.css">
-    <link rel="stylesheet" href="../../vendors/slick/slick-theme.css">
+    rel="stylesheet">
+    <link rel="stylesheet" href="../vendors/slick/slick.css" />
+    <link rel="stylesheet" href="../vendors/slick/slick-theme.css" />
 
-    <title>Nice Spend | Register</title>
+    <title>Nice Spend | Categories</title>
   </head>
 
   <body>
@@ -46,20 +46,20 @@
             <span class="bar2"></span>
             <span class="bar3"></span>
           </div>
-          <a href="../../" class="logo">
-            <img src="../../Images/logo.png" alt="logo" />
+          <a href="../" class="logo">
+            <img src="../Images/logo.png" alt="logo" />
           </a>
         </div>
         <div class="right">
           <div class="links">
             <a href="#" class="main_link">
-              <img src="../../Images/icons/user-profile.svg" alt="">
+              <img src="../Images/icons/user-profile.svg" alt="">
             </a>
             <a href="#" class="main_link">
-              <img src="../../Images/icons/heart-shape-outline.svg" alt="">
+              <img src="../Images/icons/heart-shape-outline.svg" alt="">
             </a>
             <a href="./cart/" class="main_link">
-              <img src="../../Images/icons/shopping-cart-empty-side-view.svg" alt="">
+              <img src="../Images/icons/shopping-cart-empty-side-view.svg" alt="">
               <span id="cart_count">2</span>
             </a>
           </div>
@@ -79,15 +79,15 @@
     </nav>
 
     <div class="sideBar sideBar_closed">
-        <div class="swipearea"></div>
+      <div class="swipearea"></div>
       <div class="header">
         <div class="left">
-          <a href="../../"> <img src="../../Images/logo.png" alt="logo" /></a>
-        </div> 
+          <a href="../"> <img src="../Images/logo.png" alt="logo" /></a>
+        </div>
         <div class="right">
           <div class="user">
             <div class="name">John</div>
-            <a href="#" class="profileLink">Profile</a>
+            <a href="../auth/login/" class="profileLink">Profile</a>
           </div>
         </div>
       </div>
@@ -100,13 +100,13 @@
       <hr />
       <div class="link_section">
         <a href="#" class="link">Favourites</a>
-        <a href="../../categories/" class="link">Categories</a>
+        <a href="./" class="link">Categories</a>
         <a href="#" class="link">Super Deals</a>
       </div>
 
       <div class="sideBar_footer">
         <div class="footer_left">
-          <a href="#">Logout</a>
+          <a href="../auth/login/index.html">Logout</a>
         </div>
         <div class="footer_right">
           <a href="#"><i class="fas fa-cog"></i></a>
@@ -114,44 +114,72 @@
       </div>
     </div>
 
-    <div class="login_wrapper">
-      <div class="header">
-        <div class="sub_heading">Welcome!</div>
-        <div class="heading">Register</div>
-      </div>
-      <div class="form_wrapper">
-        <form>
-          <div class="input_field">
-            <div class="icon"><i class="fas fa-user"></i></div>
-            <input type="text" placeholder="Fullname">
-          </div>
-          <div class="input_field">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <input type="email" placeholder="Email Address">
-          </div>
-          <div class="input_field">
-            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-            <input type="number" placeholder="Mobile Number">
-          </div>
-          <div class="input_field">
-            <div class="icon"><i class="fas fa-unlock-alt"></i></div>
-            <input type="password" placeholder="Password">
-          </div>
+    
+    <div class="categories_wrapper">
+      <div class="heading">All Categories</div>
+      <div class="cards_wrapper">
 
-            <button type="submit" id="sub">Login</button>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/smartphone.svg" alt="icon">
+          </div>
+          <div class="name">Smartphones</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/desktop-computer.svg" alt="icon">
+          </div>
+          <div class="name">Computers & Tablets</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/controller.svg" alt="icon">
+          </div>
+          <div class="name">Gaming & VR</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/first-aid-kit.svg" alt="icon">
+          </div>
+          <div class="name">Health & Fitness</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/audio-book.svg" alt="icon">
+          </div>
+          <div class="name">Audio</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/tshirt.svg" alt="icon">
+          </div>
+          <div class="name">Wearables</div>
+        </a>
+        <a href="#" class="card">
+          <div class="icon">
+            <img src="../Images/icons/camera.svg" alt="icon">
+          </div>
+          <div class="name">Cameras</div>
+        </a>
 
-        
-            <div class="registerBtn">
-              <span>Already have an account?</span>
-              <a href="../login/">Register</a>
-            </div>
-          </form>
       </div>
     </div>
+    
 
-    <script src="../../vendors/jquery.touchSwipe.min.js" ></script>
-    <script src="../../vendors/slick/slick.min.js" ></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../js/slickEnable.js"></script>
+
+    <script src="../vendors/jquery.touchSwipe.min.js"></script>
+    <script src="../vendors/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/slickEnable.js"></script>
+
+    <script>
+      $(document).ready(() => {
+        $(".main_pd_slider").slick({
+          dots: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+        });
+      });
+    </script>
   </body>
 </html>
