@@ -1,5 +1,8 @@
 .categories_wrapper{
     margin-top: 18rem;
+    @include respond(h700){
+        margin-top: 16rem;
+      }
     .heading{
         margin-left: 1rem;
         font-size: 2rem;

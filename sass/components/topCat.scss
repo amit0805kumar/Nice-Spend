@@ -1,6 +1,9 @@
 .top_categ{
     margin-top: 18rem;
     padding: 1rem 0.8rem;
+    @include respond(h700){
+        margin-top: 16rem;
+      }
     .heading{
         font-size: 1.8rem;
         font-weight: 300;

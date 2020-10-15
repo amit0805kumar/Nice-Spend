@@ -1,5 +1,8 @@
 .coupon_code_field {
   margin-top: 18rem;
+  @include respond(h700){
+    margin-top: 16rem;
+  }
   form {
     display: flex;
     padding: 1rem;
@@ -34,7 +37,7 @@
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image:url("../Images/shopping.png"), linear-gradient(to right, #f92339, #a111ff);
+  background-image:url("../Images/shopping.png"),$gradient_1;
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -63,6 +66,11 @@
     border: 1.5px solid #fff;
     margin: 1.2rem 0;
     font-size: 1.3rem;
+    letter-spacing: 3px;
+    @include respond(h700){
+      margin: 0.8rem;
+      font-size: 1rem;
+    }
   }
 }
 

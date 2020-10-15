@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 * {
   box-sizing: inherit;
   margin: 0px;
@@ -11,7 +12,7 @@ body {
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Nunito", sans-serif; }
 
 .noselect {
   -webkit-touch-callout: none;
@@ -235,6 +236,10 @@ nav.nav {
 .top_categ {
   margin-top: 18rem;
   padding: 1rem 0.8rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .top_categ {
+    margin-top: 16rem; } }
+
   .top_categ .heading {
     font-size: 1.8rem;
     font-weight: 300;
@@ -336,7 +341,7 @@ section.product_cards {
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       border-radius: 10px;
       background: #fff;
-      height: 21rem;
+      height: 22.5rem;
       overflow: hidden;
       display: block;
       margin: 0 1rem;
@@ -352,7 +357,7 @@ section.product_cards {
           margin: 0.5rem 0;
           border-radius: 4px;
           color: #fff;
-          background-image: linear-gradient(to right, #F92339, #A111FF); }
+          background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
       section.product_cards .slider .card .image {
         padding: 0.5rem;
         width: 12rem;
@@ -369,6 +374,7 @@ section.product_cards {
         display: flex;
         width: 100%;
         padding: 1rem;
+        padding-top: 0.6rem;
         margin-bottom: 1rem;
         justify-content: space-between; }
         section.product_cards .slider .card .content .left .name {
@@ -377,11 +383,14 @@ section.product_cards {
         section.product_cards .slider .card .content .left .categ {
           color: #4e4e4e;
           font-size: 0.8rem; }
-        section.product_cards .slider .card .content .left .stars {
+        section.product_cards .slider .card .content .left .stars .row {
           display: flex; }
-          section.product_cards .slider .card .content .left .stars i {
-            color: #E91E63;
-            margin: 0.6rem 0.3rem; }
+        section.product_cards .slider .card .content .left .stars .count {
+          color: #858585;
+          font-size: 1rem; }
+        section.product_cards .slider .card .content .left .stars i {
+          color: #311B92;
+          margin: 0.6rem 0.2rem; }
         section.product_cards .slider .card .content .left .price {
           color: #272727;
           font-size: 1.2rem;
@@ -597,11 +606,20 @@ section.feature {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .product_details {
+    margin-top: 16rem; } }
+
   .product_details .name {
     color: #4e4e4e; }
   .product_details .stars {
-    color: #311B92;
-    display: flex; }
+    color: #311B92; }
+    .product_details .stars .row {
+      display: flex; }
+    .product_details .stars .count {
+      font-size: 1rem;
+      color: #858585;
+      text-align: right; }
 
 .main_product_slider {
   width: 100%;
@@ -619,7 +637,7 @@ section.feature {
       margin: 0.5rem 0;
       border-radius: 4px;
       color: #fff;
-      background-image: linear-gradient(to right, #f92339, #a111ff); }
+      background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
   .main_product_slider .fav_btn {
     position: absolute;
     bottom: 1rem;
@@ -701,7 +719,7 @@ section.feature {
   .main_product_details .cartBtn {
     margin-top: 2.5rem;
     color: #fff;
-    background-image: linear-gradient(to right, #f92339, #a111ff); }
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
   .main_product_details .buyBtn {
     color: #fff;
     background: #311B92;
@@ -725,6 +743,10 @@ section.feature {
 
 .coupon_code_field {
   margin-top: 18rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .coupon_code_field {
+    margin-top: 16rem; } }
+
   .coupon_code_field form {
     display: flex;
     padding: 1rem; }
@@ -753,7 +775,7 @@ section.feature {
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image: url("../Images/shopping.png"), linear-gradient(to right, #f92339, #a111ff);
+  background-image: url("../Images/shopping.png"), linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -777,7 +799,12 @@ section.feature {
     color: #fff;
     border: 1.5px solid #fff;
     margin: 1.2rem 0;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    letter-spacing: 3px; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .static_wrapper .bigBtn {
+    margin: 0.8rem;
+    font-size: 1rem; } }
 
 .cartBottomSlider {
   margin-bottom: 18rem !important; }
@@ -879,6 +906,10 @@ section.feature {
 
 .categories_wrapper {
   margin-top: 18rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .categories_wrapper {
+    margin-top: 16rem; } }
+
   .categories_wrapper .heading {
     margin-left: 1rem;
     font-size: 2rem;

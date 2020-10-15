@@ -95,7 +95,7 @@ section.product_cards{
             border-radius: 10px;
             background: #fff;
             // width: 15rem !important;
-            height: 21rem;
+            height: 22.5rem;
             overflow: hidden;
             display: block;
             margin: 0 1rem;
@@ -111,7 +111,7 @@ section.product_cards{
                     margin: 0.5rem 0;
                     border-radius: 4px;
                     color: #fff;
-                    background-image: linear-gradient(to right, #F92339,#A111FF);
+                    background-image: $gradient_1;
                 }
             }
             .image{
@@ -131,6 +131,7 @@ section.product_cards{
                 display: flex;
                 width: 100%;
                 padding: 1rem;
+                padding-top: 0.6rem;
                 margin-bottom: 1rem;
                 justify-content: space-between;
                 .left{
@@ -143,10 +144,16 @@ section.product_cards{
                         font-size: 0.8rem;
                     }
                     .stars{
-                        display: flex;
+                        .row{
+                            display: flex;
+                        }
+                        .count{
+                            color: $color_grey_light;
+                            font-size: 1rem;
+                        }   
                         i{
-                            color: #E91E63;
-                            margin: 0.6rem 0.3rem;
+                            color: $color_primary;
+                            margin: 0.6rem 0.2rem;
                         }
                     }
                     .price{
