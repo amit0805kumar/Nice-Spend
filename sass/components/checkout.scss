@@ -67,8 +67,9 @@
     margin: 1.2rem 0;
     font-size: 1.3rem;
     letter-spacing: 3px;
+    background: rgba(255, 255, 255, 0.2);
     @include respond(h700){
-      margin: 0.8rem;
+      margin: 0.8rem 0;
       font-size: 1rem;
     }
   }
