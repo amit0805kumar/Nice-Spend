@@ -346,6 +346,9 @@ section.product_cards {
       display: block;
       margin: 0 1rem;
       position: relative; }
+      section.product_cards .slider .card a:focus {
+        outline: none;
+        border: none; }
       section.product_cards .slider .card .tag_container {
         position: absolute;
         left: 1rem;
@@ -357,7 +360,7 @@ section.product_cards {
           margin: 0.5rem 0;
           border-radius: 4px;
           color: #fff;
-          background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+          background: #311B92; }
       section.product_cards .slider .card .image {
         padding: 0.5rem;
         width: 12rem;
@@ -637,7 +640,7 @@ section.feature {
       margin: 0.5rem 0;
       border-radius: 4px;
       color: #fff;
-      background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+      background: #311B92; }
   .main_product_slider .fav_btn {
     position: absolute;
     bottom: 1rem;
@@ -690,7 +693,6 @@ section.feature {
         font-weight: 700; }
   .main_product_details .qty {
     width: 9rem;
-    border: #dfd004 2px solid;
     display: flex;
     align-items: center;
     padding: 0.5rem; }
@@ -702,7 +704,8 @@ section.feature {
     .main_product_details .qty input {
       width: 100%;
       padding: 0.5rem 1rem;
-      border: none; }
+      border: none;
+      background-color: transparent; }
       .main_product_details .qty input:focus {
         outline: none; }
     .main_product_details .qty .btn {
@@ -719,10 +722,10 @@ section.feature {
   .main_product_details .cartBtn {
     margin-top: 2.5rem;
     color: #fff;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    background: #512DA8; }
   .main_product_details .buyBtn {
     color: #fff;
-    background: #311B92;
+    background: #4CAF50;
     margin-top: 1rem; }
 
 .product_details_main {
@@ -775,7 +778,7 @@ section.feature {
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image: url("../Images/shopping.png"), linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url("../Images/shopping.png"), linear-gradient(#512DA8, #512DA8);
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -795,13 +798,13 @@ section.feature {
     width: 100%;
     padding: 1rem 0;
     text-align: center;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 500;
+    color: #311B92;
     border: 1.5px solid #fff;
     margin: 1.2rem 0;
     font-size: 1.3rem;
     letter-spacing: 3px;
-    background: rgba(255, 255, 255, 0.2); }
+    background: #fff; }
 @media screen and (max-height: 43.75em) and (max-width: 37.5em) {
   .static_wrapper .bigBtn {
     margin: 0.8rem 0;
@@ -937,5 +940,130 @@ section.feature {
         font-size: 1.3rem;
         color: #4e4e4e;
         margin-top: 0.8rem; }
+
+.search_result {
+  margin-top: 18rem; }
+  .search_result .row {
+    display: flex; }
+  .search_result .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #858585;
+    padding: 1rem;
+    border-bottom: 1.5px solid #4e4e4e;
+    margin-bottom: 2rem; }
+    .search_result .header .sort {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem; }
+      .search_result .header .sort span {
+        margin-left: 0.5rem;
+        font-size: 1.8rem; }
+  .search_result .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .search_result .wrapper .card {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 10px;
+      background: #fff;
+      width: 15rem;
+      height: 22.5rem;
+      overflow: hidden;
+      display: block;
+      margin: 1.5rem 1rem;
+      position: relative; }
+      .search_result .wrapper .card .tag_container {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        font-size: .7rem;
+        z-index: 50; }
+        .search_result .wrapper .card .tag_container .tag {
+          padding: 0.2rem 0.5rem;
+          margin: 0.5rem 0;
+          border-radius: 4px;
+          color: #fff;
+          background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+      .search_result .wrapper .card .image {
+        padding: 0.5rem;
+        width: 12rem;
+        height: 12rem;
+        display: block;
+        transform: translateX(-50%);
+        margin-left: 50%; }
+        .search_result .wrapper .card .image img {
+          width: 90%;
+          margin-top: 1rem;
+          transform: translateX(-50%);
+          margin-left: 50%; }
+      .search_result .wrapper .card .content {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1rem;
+        justify-content: space-between; }
+        .search_result .wrapper .card .content .left .name {
+          font-weight: 500;
+          font-size: 1.3rem; }
+        .search_result .wrapper .card .content .left .categ {
+          color: #4e4e4e;
+          font-size: 0.8rem; }
+        .search_result .wrapper .card .content .left .stars .row {
+          display: flex; }
+        .search_result .wrapper .card .content .left .stars .count {
+          color: #858585;
+          font-size: 1rem; }
+        .search_result .wrapper .card .content .left .stars i {
+          color: #311B92;
+          margin: 0.6rem 0.2rem; }
+        .search_result .wrapper .card .content .left .price {
+          color: #272727;
+          font-size: 1.2rem;
+          margin-top: 0.6rem; }
+        .search_result .wrapper .card .content .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+          .search_result .wrapper .card .content .right a {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 300px;
+            background: #311B92;
+            color: #fff;
+            position: relative;
+            margin-top: 0.4rem; }
+            .search_result .wrapper .card .content .right a i {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 1rem; }
+
+.filter {
+  position: fixed;
+  background: #311B92;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  color: #fff;
+  padding: 1rem; }
+  .filter .section {
+    padding: 1rem 0; }
+    .filter .section .heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    .filter .section .input_field {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0; }
+      .filter .section .input_field label {
+        margin-left: 0.8rem;
+        font-size: 1.3rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,12 +32,12 @@
   }
 }
 
-.static_wrapper {
+.static_wrapper { 
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image:url("../Images/shopping.png"),$gradient_1;
+  background-image:url("../Images/shopping.png"),linear-gradient($color_primary_light,$color_primary_light);
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -61,13 +61,13 @@
     width: 100%;
     padding: 1rem 0;
     text-align: center;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 500;
+    color: $color_primary;
     border: 1.5px solid #fff;
     margin: 1.2rem 0;
     font-size: 1.3rem;
     letter-spacing: 3px;
-    background: rgba(255, 255, 255, 0.2);
+    background:#fff;
     @include respond(h700){
       margin: 0.8rem 0;
       font-size: 1rem;

@@ -1,0 +1,158 @@
+.search_result{
+    margin-top: 18rem;
+    .row{
+        display: flex;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        color: $color_grey_light;
+        padding: 1rem;
+        border-bottom:1.5px solid $color_grey;
+        margin-bottom: 2rem;
+
+        .sort{
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            span{
+                margin-left: 0.5rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            box-shadow: $box_shadow_2;
+            border-radius: 10px;
+            background: #fff;
+            width: 15rem;
+            height: 22.5rem;
+            overflow: hidden;
+            display: block;
+            margin: 1.5rem 1rem;
+            position: relative;
+            .tag_container{
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+                font-size: .7rem;
+                z-index: 50;
+                .tag{
+                    padding: 0.2rem 0.5rem;
+                    margin: 0.5rem 0;
+                    border-radius: 4px;
+                    color: #fff;
+                    background-image: $gradient_1;
+                }
+            }
+            .image{
+                padding: 0.5rem;
+                width: 12rem;
+                height: 12rem;
+                display: block;
+                @include rowCenter();
+
+                img{
+                    width: 90%;
+                    margin-top: 1rem;
+                    @include rowCenter();
+                }
+            }
+            .content{
+                display: flex;
+                width: 100%;
+                padding: 1rem;
+                padding-top: 0.6rem;
+                margin-bottom: 1rem;
+                justify-content: space-between;
+                .left{
+                    .name{
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                    }
+                    .categ{
+                        color: $color_grey;
+                        font-size: 0.8rem;
+                    }
+                    .stars{
+                        .row{
+                            display: flex;
+                        }
+                        .count{
+                            color: $color_grey_light;
+                            font-size: 1rem;
+                        }   
+                        i{
+                            color: $color_primary;
+                            margin: 0.6rem 0.2rem;
+                        }
+                    }
+                    .price{
+                        color: $color_grey_dark;
+                        font-size: 1.2rem;
+                        margin-top: 0.6rem;
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    a{
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 300px;
+                        background: $color_primary;
+                        color: #fff;
+                        position: relative;
+                        margin-top: 0.4rem;
+                        i{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filter{
+    position: fixed;
+    background: $color_primary;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  
+    color: #fff;
+    padding: 1rem;
+    .section{
+ 
+        padding: 1rem 0;
+        .heading{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          
+        }
+        .input_field{
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            label{
+                margin-left: 0.8rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

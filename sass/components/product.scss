@@ -40,7 +40,7 @@
       margin: 0.5rem 0;
       border-radius: 4px;
       color: #fff;
-      background-image: $gradient_1;
+      background: $color_primary;
     }
   }
   .fav_btn {
@@ -112,7 +112,6 @@
 
   .qty{
       width: 9rem;
-      border: rgb(223, 208, 4) 2px solid;
       display: flex;
       align-items: center;
       padding: 0.5rem;
@@ -126,6 +125,7 @@
           width: 100%;
           padding: 0.5rem 1rem; 
           border: none;
+          background-color: transparent;
           &:focus{
               outline: none;
           }
@@ -147,12 +147,12 @@
 .cartBtn{
     margin-top: 2.5rem;  
     color: #fff;
-    background-image: $gradient_1;
+    background: $color_primary_light;
 }
 
 .buyBtn{
     color: #fff;
-    background: $color_primary;
+    background: $color_green;
     margin-top: 1rem;
 }
 }
