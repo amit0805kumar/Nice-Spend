@@ -178,14 +178,14 @@ $(document).ready(() => {
     filter.removeClass("showFilter");
   });
   sortBtn.click(() => {
-    filterSwipe.show();
-    filter.addClass("showFilter");
+    filterSwipe.toggle();
+    filter.toggleClass("showFilter");
     filterSec.hide();
     sortBy.show();
   });
   filterBtn.click(() => {
-    filterSwipe.show();
-    filter.addClass("showFilter");
+    filterSwipe.toggle();
+    filter.toggleClass("showFilter");
     filterSec.hide();
     filterBy.show();
   });
