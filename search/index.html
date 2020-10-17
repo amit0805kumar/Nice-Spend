@@ -75,6 +75,20 @@
           <div class="btn"><i class="fas fa-search"></i></div>
         </div>
       </div>
+      <div class="swipeArea" id="filterSwipe"></div>
+      <div class="filterHeader">
+        <div class="heading">Product Name</div>
+        <div class="row">
+          <div class="sort" id="sortBtn">Sort By <span class="material-icons">
+            sort
+            </span></div>
+            
+          <div class="sort" id="filterBtn">Filter <span class="material-icons">
+            filter_alt
+            </span></div>
+        </div>
+
+      </div>
     </nav>
 
     <div class="sideBar sideBar_closed">
@@ -115,7 +129,9 @@
 
     
     <!-- filter -->
+    
     <div class="filter">
+      
       <div class="section" id="sortBy">
         <div class="heading">Sort By</div>
         <div class="input_field">
@@ -133,35 +149,96 @@
       </div>
       <div class="section" id="filterBy">
         <div class="heading">Filter By</div>
-        <div class="input_field">
-          <input type="checkbox" id="lth" name="lth" value="lth">
-          <label for="lth">Low To High</label>
+        <div class="filters_wrapper">
+          <div class="filter_sec">
+           <div class="header">
+            <div class="icon">+</div>
+            <div class="name">Brands</div>
+           </div>
+           <div class="list">
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Toshiba</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Lenovo</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="pop" name="pop" value="pop">
+              <label for="pop">Hp</label>
+            </div>
+           </div>
+          </div>
+          <div class="filter_sec">
+           <div class="header">
+            <div class="icon">+</div>
+            <div class="name">Category</div>
+           </div>
+           <div class="list">
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Electronics</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Fashion</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="pop" name="pop" value="pop">
+              <label for="pop">Wearables</label>
+            </div>
+           </div>
+          </div>
+          <div class="filter_sec">
+           <div class="header">
+            <div class="icon">+</div>
+            <div class="name">Category</div>
+           </div>
+           <div class="list">
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Electronics</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Fashion</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="pop" name="pop" value="pop">
+              <label for="pop">Wearables</label>
+            </div>
+           </div>
+          </div>
+          <div class="filter_sec">
+           <div class="header">
+            <div class="icon">+</div>
+            <div class="name">Category</div>
+           </div>
+           <div class="list">
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Electronics</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="lth" name="lth" value="lth">
+              <label for="lth">Fashion</label>
+            </div>
+            <div class="input_field">
+              <input type="checkbox" id="pop" name="pop" value="pop">
+              <label for="pop">Wearables</label>
+            </div>
+           </div>
+          </div>
         </div>
-        <div class="input_field">
-          <input type="checkbox" id="lth" name="lth" value="lth">
-          <label for="lth">High To Low</label>
-        </div>
-        <div class="input_field">
-          <input type="checkbox" id="pop" name="pop" value="pop">
-          <label for="pop">Popularity</label>
-        </div>
+        
       </div>
     </div>
    <!-- Search Result  -->
     <div class="search_result">
-      <div class="header">
-        <div class="heading">Product Name</div>
-        <div class="row">
-          <div class="sort">Sort By <span class="material-icons">
-            sort
-            </span></div>
-            
-          <div class="sort">Filter <span class="material-icons">
-            filter_alt
-            </span></div>
-        </div>
+  
 
-      </div>
+
       <div class="wrapper">
 
         <!-- Cards -->

@@ -1,28 +1,27 @@
-.search_result{
-    margin-top: 18rem;
+.filterHeader{
     .row{
         display: flex;
     }
-    .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $color_grey_light;
+    padding: 1rem;
+    border-bottom:1.5px solid $color_grey;
+    background: #fff;
+    .sort{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        font-size: 1.5rem;
-        color: $color_grey_light;
-        padding: 1rem;
-        border-bottom:1.5px solid $color_grey;
-        margin-bottom: 2rem;
-
-        .sort{
-            display: flex;
-            align-items: center;
-            margin-left: 1rem;
-            span{
-                margin-left: 0.5rem;
-                font-size: 1.8rem;
-            }
+        margin-left: 1rem;
+        span{
+            margin-left: 0.5rem;
+            font-size: 1.8rem;
         }
     }
+}
+.search_result{
+    margin-top: 22rem;
 
     .wrapper{
         display: flex;
@@ -133,11 +132,14 @@
     bottom: 0;
     left: 0;
     z-index: 100;
-  
     color: #fff;
     padding: 1rem;
+    transition: all 0.3s;
+    max-height: 50vh;
+    overflow-y: scroll;
+    transform: translateY(100%);
     .section{
- 
+        display: none;
         padding: 1rem 0;
         .heading{
             font-size: 1.5rem;
@@ -145,6 +147,28 @@
             margin-bottom: 1rem;
           
         }
+
+        .filters_wrapper{
+           .filter_sec{
+            margin-bottom: 1.5rem;
+            .header{
+                display: flex;
+                font-size: 1.3rem;
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+                background: $color_primary_light;
+                padding: 0.5rem 1rem;
+                .icon{
+                    margin-right: 1.5rem;
+                }
+            }
+            .list{
+                margin-left: 1rem;
+            }
+           }
+           
+        }
+
         .input_field{
             display: flex;
             align-items: center;
@@ -155,4 +179,18 @@
             }
         }
     }
+}
+.swipeArea{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+
+}
+.showFilter{
+    transform: translateY(0);
 }

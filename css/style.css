@@ -941,26 +941,27 @@ section.feature {
         color: #4e4e4e;
         margin-top: 0.8rem; }
 
-.search_result {
-  margin-top: 18rem; }
-  .search_result .row {
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #858585;
+  padding: 1rem;
+  border-bottom: 1.5px solid #4e4e4e;
+  background: #fff; }
+  .filterHeader .row {
     display: flex; }
-  .search_result .header {
+  .filterHeader .sort {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
-    color: #858585;
-    padding: 1rem;
-    border-bottom: 1.5px solid #4e4e4e;
-    margin-bottom: 2rem; }
-    .search_result .header .sort {
-      display: flex;
-      align-items: center;
-      margin-left: 1rem; }
-      .search_result .header .sort span {
-        margin-left: 0.5rem;
-        font-size: 1.8rem; }
+    margin-left: 1rem; }
+    .filterHeader .sort span {
+      margin-left: 0.5rem;
+      font-size: 1.8rem; }
+
+.search_result {
+  margin-top: 22rem; }
   .search_result .wrapper {
     display: flex;
     justify-content: center;
@@ -1051,13 +1052,31 @@ section.feature {
   left: 0;
   z-index: 100;
   color: #fff;
-  padding: 1rem; }
+  padding: 1rem;
+  transition: all 0.3s;
+  max-height: 50vh;
+  overflow-y: scroll;
+  transform: translateY(100%); }
   .filter .section {
+    display: none;
     padding: 1rem 0; }
     .filter .section .heading {
       font-size: 1.5rem;
       font-weight: 500;
       margin-bottom: 1rem; }
+    .filter .section .filters_wrapper .filter_sec {
+      margin-bottom: 1.5rem; }
+      .filter .section .filters_wrapper .filter_sec .header {
+        display: flex;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        background: #512DA8;
+        padding: 0.5rem 1rem; }
+        .filter .section .filters_wrapper .filter_sec .header .icon {
+          margin-right: 1.5rem; }
+      .filter .section .filters_wrapper .filter_sec .list {
+        margin-left: 1rem; }
     .filter .section .input_field {
       display: flex;
       align-items: center;
@@ -1065,5 +1084,18 @@ section.feature {
       .filter .section .input_field label {
         margin-left: 0.8rem;
         font-size: 1.3rem; }
+
+.swipeArea {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none; }
+
+.showFilter {
+  transform: translateY(0); }
 
 /*# sourceMappingURL=style.css.map */

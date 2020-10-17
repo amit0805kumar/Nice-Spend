@@ -162,4 +162,38 @@ $(document).ready(() => {
     });
   };
   navScrollTop();
+
+  //Filter Management
+
+  var sortBtn = $("#sortBtn");
+  var filterBtn = $("#filterBtn");
+  var filterSwipe = $("#filterSwipe");
+  var filter = $(".filter");
+  var filterSec = $(".filter .section");
+
+  var sortBy = $("#sortBy");
+  var filterBy = $("#filterBy");
+  filterSwipe.on("click", function () {
+    $(this).hide();
+    filter.removeClass("showFilter");
+  });
+  sortBtn.click(() => {
+    filterSwipe.show();
+    filter.addClass("showFilter");
+    filterSec.hide();
+    sortBy.show();
+  });
+  filterBtn.click(() => {
+    filterSwipe.show();
+    filter.addClass("showFilter");
+    filterSec.hide();
+    filterBy.show();
+  });
+
+  var filterEl = $(".filter_sec");
+  var filterList = $(".filter_sec .list");
+  filterList.hide();
+  filterEl.on("click", function () {
+    $(this).find(".list").toggle();
+  });
 });
