@@ -168,13 +168,13 @@ nav.nav {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   height: 100vh;
   width: 70%;
-  background: #311B92;
-  background-image: url("../Images/sidebarPattern.svg");
+  background: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: scroll;
   overflow-y: unset;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  color: #311B92; }
   .sideBar .swipearea {
     width: 200rem;
     height: 100%;
@@ -188,6 +188,7 @@ nav.nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.8rem;
+    background: #311B92;
     border-bottom: 1px solid #512DA8; }
     .sideBar .header .left a {
       display: block;
@@ -216,17 +217,21 @@ nav.nav {
     border-top: 1px solid #fff; }
     .sideBar .sideBar_footer a {
       font-size: 1.3rem;
-      color: #fff; }
+      color: #311B92;
+      font-weight: 700; }
   .sideBar .link_section {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem; }
+    .sideBar .link_section i {
+      margin-right: 1rem; }
     .sideBar .link_section a {
-      color: #fff;
+      color: #311B92;
       margin: 0.8rem 0;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      font-weight: 700; }
 
 .sideBar_closed {
   transform: translateX(-102%); }
@@ -778,7 +783,7 @@ section.feature {
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image: url("../Images/shopping.png"), linear-gradient(#512DA8, #512DA8);
+  background: #512DA8;
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -804,7 +809,8 @@ section.feature {
     margin: 1.2rem 0;
     font-size: 1.3rem;
     letter-spacing: 3px;
-    background: #fff; }
+    background: #fff;
+    border-radius: 4px; }
 @media screen and (max-height: 43.75em) and (max-width: 37.5em) {
   .static_wrapper .bigBtn {
     margin: 0.8rem 0;

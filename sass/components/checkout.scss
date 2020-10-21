@@ -37,7 +37,7 @@
   bottom: 0;
   width: 100%;
   z-index: 500;
-  background-image:url("../Images/shopping.png"),linear-gradient($color_primary_light,$color_primary_light);
+  background: $color_primary_light;
   background-size: contain;
   color: #fff;
   padding: 1rem;
@@ -68,6 +68,7 @@
     font-size: 1.3rem;
     letter-spacing: 3px;
     background:#fff;
+    border-radius: 4px;
     @include respond(h700){
       margin: 0.8rem 0;
       font-size: 1rem;
