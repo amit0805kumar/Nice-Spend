@@ -65,6 +65,8 @@ nav.nav {
       border: none;
       outline: none;
       color: #fff; }
+      nav.nav .top_bar select option {
+        color: #000; }
       nav.nav .top_bar select:focus {
         outline: none;
         border: none; }
@@ -1103,5 +1105,79 @@ section.feature {
 
 .showFilter {
   transform: translateY(0); }
+
+.profile_header {
+  margin-top: 18rem;
+  padding: 1px;
+  margin-bottom: 4rem; }
+@media screen and (max-height: 43.75em) and (max-width: 37.5em) {
+  .profile_header {
+    margin-top: 16rem; } }
+
+  .profile_header .heading {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    color: #311B92;
+    font-size: 3rem;
+    display: inline-block;
+    position: relative; }
+    .profile_header .heading::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 2px;
+      background: #311B92;
+      width: 50%;
+      bottom: -.5rem; }
+
+.profile_section {
+  margin-top: 3rem;
+  box-shadow: 0 12px 20px rgba(12, 12, 12, 0.1);
+  border-radius: 6px;
+  width: 90%;
+  background: #fff;
+  transform: translateX(-50%);
+  margin-left: 50%; }
+  .profile_section .header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4e4e4e;
+    padding: 2rem; }
+  .profile_section .content {
+    padding-bottom: 2rem; }
+    .profile_section .content .list {
+      list-style-type: none;
+      width: 100%;
+      padding: 0 1.5rem; }
+      .profile_section .content .list li {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #f0f0f0; }
+        .profile_section .content .list li .left {
+          width: 5rem;
+          color: #512DA8; }
+        .profile_section .content .list li .right {
+          flex: 1; }
+          .profile_section .content .list li .right .header {
+            display: flex;
+            font-size: 1.5rem;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 0.3rem; }
+            .profile_section .content .list li .right .header .btn {
+              color: #b8b8b8; }
+              .profile_section .content .list li .right .header .btn span {
+                font-size: 1.8rem; }
+          .profile_section .content .list li .right .value input, .profile_section .content .list li .right .value select, .profile_section .content .list li .right .value option {
+            color: #858585;
+            font-size: 1.4rem;
+            background: #fff;
+            font-family: 'Nunito',sans-serif;
+            border: none;
+            width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

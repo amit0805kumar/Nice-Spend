@@ -22,6 +22,9 @@ nav.nav {
       border: none;
       outline: none;
       color: #fff;
+      option{
+        color: #000;
+      }
       &:focus {
         outline: none;
         border: none;
