@@ -84,3 +84,86 @@
     }
   }
 }
+
+.changePwd{
+  margin-top: 18rem;
+  padding: 1px;
+  margin-bottom: 4rem;
+  @include respond(h700) {
+    margin-top: 16rem;
+  }
+  .heading{
+    display: flex;    margin-top: 2rem;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    a{
+      font-size: 2rem;
+      height: 100%;
+      color: $color_primary;
+    }
+   span{
+    font-weight: 700;
+    color: $color_primary;
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 2px;
+        background: $color_primary;
+        width: 50%;
+        bottom: -.5rem;
+    }
+   }
+  }
+}
+
+.profile_section{
+  .form{
+    width: 100%;
+    padding: 1rem;
+    button{
+      background: $color_primary;
+      margin-bottom: 1.5rem;
+      font-family: 'Poppins',sans-serif;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 3px;
+      letter-spacing: 2px;
+    }
+    .input_field{
+      display: flex;
+      flex-direction: column;
+      margin: 3rem 0;
+      label{
+        font-size: 1.5rem;
+        color: $color_grey;
+        margin-bottom: .8rem;
+        #star{
+          color: red;
+          margin-left: 0.3rem;
+        }
+      }
+      input{
+        padding: 0.8rem 0.3rem;
+        border: 1.5px solid $color_grey_light;
+        font-family: 'Poppins',sans-serif;
+        font-size: 1.3rem;
+        border-radius: 3px;
+        &:focus{
+          outline: none;
+          border: 1.5px solid $color_primary;
+        }
+        &::placeholder{
+          font-family: 'Poppins',sans-serif;
+        }
+      }
+    }
+  }
+}
